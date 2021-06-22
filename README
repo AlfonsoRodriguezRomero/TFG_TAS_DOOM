@@ -1,3 +1,13 @@
+Este proyecto ha sido realizado para mi TFG para la ETSII de la Universidad de Sevilla.
+
+Bajo mi comentario se encuentra el readme original de jomihaka, puesto que la base del proyecto es su programa xdre, que se encuentra en https://github.com/jomihaka/xdre
+
+He cambiado la ruta de la que saca las demos para que se adapten a la estructura de GitHub.
+La aplicación está testeada con la rutas originales, en las que las demos se encontraban en otra carpeta de la máquina virtual.
+Las rutas originales se encuentran comentadas y se pueden ver en el archivo xdre.cpp, dentro de la función 'void xdre::init()', líneas 779, 790 y 791.
+
+---------------------------------
+
 v2.17
 - added: z-axis position and momentum indicators
 
