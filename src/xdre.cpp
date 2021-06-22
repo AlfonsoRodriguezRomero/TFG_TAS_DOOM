@@ -775,15 +775,20 @@ void xdre::init() {
     using namespace std;
 
     FILE* demoVacia;
-    demoVacia = fopen("/media/sf_Compartida_Ubuntu/DEMOS/demoBase.lmp", "r");
+    demoVacia = fopen("../DEMOS/demoBase.lmp", "r");
+    //demoVacia = fopen("/media/sf_Compartida_Ubuntu/DEMOS/demoBase.lmp", "r");
     load(demoVacia);
 
     ResultDemo resultado;
     float tiempo = 100.0;
     bool completaNivel = false;
     
-    demo1 = listaDesdeDemo("/home/alf/Documents/DEMOS/pruebaTAS11-03parte1v4.lmp");
-    demo2 = listaDesdeDemo("/home/alf/Documents/DEMOS/pruebaTAS11-03parte2.lmp");
+    //Estas ruta se ha cambiado al subirlo a GitHub, las que se han comentado son las originales usadas para sacar los resultados
+    // en la máquina virtual
+    demo1 = listaDesdeDemo("../DEMOS/pruebaTAS11-03parte1v4.lmp")
+    demo2 = listaDesdeDemo("../DEMOS/pruebaTAS11-03parte2.lmp");
+    //demo1 = listaDesdeDemo("/home/alf/Documents/DEMOS/pruebaTAS11-03parte1v4.lmp");
+    //demo2 = listaDesdeDemo("/home/alf/Documents/DEMOS/pruebaTAS11-03parte2.lmp");
     listaTotal = sumaDeInstrucciones(demo1, demo2);
     vector<string> listaGenetico = obtieneResultadoGenetico();
     resultado = demoDesdeLista(listaGenetico);
